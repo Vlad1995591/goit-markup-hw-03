@@ -29,6 +29,21 @@
   --portfolio-title: #2e2f42;
   --portfolio-text: #434455;
 }
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--body);
@@ -40,6 +55,14 @@ body {
 }
 .link {
   text-decoration: none;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  padding-top: 24px;
 }
 
 /* ==========HEADER========== */
@@ -117,6 +140,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--hero-title);
+  margin-bottom: 26px;
 }
 .hero-btn {
   font-family: "Roboto", sans-serif;
@@ -140,6 +164,8 @@ body {
 }
 /* ===========Features======== */
 .features {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .features-list {
 }
@@ -159,6 +185,10 @@ body {
   color: var(--features-title);
 }
 /* ============doing========== */
+.doing {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .doing-title {
   font-weight: 700;
   font-size: 36px;
@@ -179,6 +209,8 @@ body {
 /* ============time============== */
 .time {
   background: var(--time);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .time-title {
   font-weight: 700;
