@@ -64,17 +64,19 @@ body {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
-  padding-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
 }
-
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 /* ==========HEADER========== */
 .header {
-  font-style: normal;
+  border-bottom: 1px solid #e7e9fc;
 }
 .header-container {
   display: flex;
-  border-bottom: 1px solid #e7e9fc;
 }
 .header-navigation {
   display: flex;
@@ -92,7 +94,6 @@ body {
   text-transform: uppercase;
   color: var(--logo);
   margin-right: 76px;
-  margin-bottom: 24px;
 }
 .header-logo-studio {
   font-family: Raleway, sans-serif;
@@ -113,11 +114,14 @@ body {
 .header-item {
 }
 .header-link {
+  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--header-link);
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-link:hover,
 .header-link:focus {
@@ -129,6 +133,8 @@ body {
 .address-list {
   display: flex;
   gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .address-item {
 }
@@ -144,15 +150,11 @@ body {
 }
 
 /* ========HERO============*/
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-/* ========HERO============*/
 .hero {
   background: var(--hero);
   text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 
 .hero-title {
@@ -181,6 +183,7 @@ body {
   cursor: pointer;
   min-width: 169px;
   height: 56px;
+  border: none;
   border-radius: 4px;
 }
 .hero-btn:hover {
@@ -192,7 +195,9 @@ body {
 .btn {
 }
 /* ===========Features======== */
-
+.features {
+  padding-top: 120px;
+}
 .features-list {
   display: flex;
   gap: 24px;
@@ -213,9 +218,12 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--features-title);
+  margin-bottom: 8px;
 }
 /* ============doing========== */
-
+.doing {
+  padding-bottom: 120px;
+}
 .doing-title {
   font-weight: 700;
   font-size: 36px;
@@ -254,11 +262,15 @@ body {
   display: flex;
   gap: 24px;
 }
+.time-text {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .list {
 }
 .time-item {
   background-color: var(--time-item);
-  width: calc((100%-72px) / 4);
+  width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
 }
 .item {
@@ -270,7 +282,6 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--doing-title);
-  margin-top: 32px;
   margin-bottom: 8px;
 }
 .time-text-prof {
@@ -279,35 +290,25 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--time-text);
-  margin-bottom: 32px;
 }
 /* =============footer============== */
 .footer {
   background-color: var(--color-footer);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .footer-container {
-  padding: 100px 1020px 100px 0px;
 }
 .footer-logo {
   font-family: Raleway, sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
-  align-items: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--logo);
 }
 .footer-logo-studio {
-  font-family: Raleway, sans-serif;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.17;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--footer-logo-studio);
 }
 
@@ -316,9 +317,10 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--footer-text);
-  width: 264px;
-  height: 72px;
   margin-top: 16px;
+}
+.footer-logo-text {
+  width: 264px;
 }
 /* *************PORTFOLIO**************** */
 /* ===== Filters=======*/
@@ -371,10 +373,9 @@ body {
 }
 /* =====portfolio===== */
 .container-text {
-  width: 360px;
   padding-top: 32px;
   padding-left: 16px;
-
+  padding-bottom: 32px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
@@ -383,15 +384,12 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 48px 24px;
 }
 .list {
 }
 .portfolio-item {
-  width: calc((100%-48px) / 3);
-}
-
-.portfolio-item:nth-child(-n + 6) {
-  margin-bottom: 48px;
+  width: calc((100% - 48px) / 3);
 }
 
 .link {
@@ -410,5 +408,4 @@ body {
   letter-spacing: 0.02em;
   color: var(--portfolio-text);
   margin-top: 8px;
-  margin-bottom: 32px;
 }
