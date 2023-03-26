@@ -286,7 +286,7 @@ body {
   background-color: var(--color-footer);
 }
 .footer-container {
-  padding: 100px 1020px 100px 156px;
+  padding: 100px 1020px 100px 0px;
 }
 .footer-logo {
   font-family: Raleway, sans-serif;
