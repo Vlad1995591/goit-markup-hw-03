@@ -192,8 +192,7 @@ body {
 .hero-btn:focus {
   background-color: var(--hero-btn);
 }
-.btn {
-}
+
 /* ===========Features======== */
 .features {
   padding-top: 120px;
